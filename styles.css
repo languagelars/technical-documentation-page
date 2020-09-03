@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* End of Reset */
+
+/* Global Styles */
+
+body {
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 95%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End of Global Styles */
+
+/* Utilities */
+
+.wrapper {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 1.1rem;
+  opacity: .75;
+}
+
+/* End of Utilities */
+
+/* Navbar */
+
+#navbar {
+  text-align: center;
+  position: fixed;
+  background: #333;
+  color: #fff;
+  width: 25%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#navbar header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#navbar li {
+  border-bottom: 1px solid #ccc;
+}
+
+/* End of Navbar */
+
+/* Main Doc */
+
+#main-doc {
+  width: 75%;
+  padding: 2rem;
+  float: right;
+}
+
+.main-section header {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.main-section p {
+  margin-bottom: 1rem;
+}
+
+.main-section li {
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+}
+
+code {
+  display: block;
+  margin-bottom: 1rem;
+  background-color: #ccc;
+  padding: 1rem;
+}
+
+/* End of Main Doc */
+
+/* Media Query */
+
+@media (max-width: 1080px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+  }
+  #main-doc {
+    margin-top: 268px;
+    float: none;
+    width: 100%;
+  }
+}
+
+/* End of Media Query */
